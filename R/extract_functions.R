@@ -1,5 +1,4 @@
 
-
 #' Extract a single region of the alignment
 #'
 #' @param query A DNAStringSet Object. It must be set.
