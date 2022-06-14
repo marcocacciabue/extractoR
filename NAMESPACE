@@ -2,3 +2,4 @@
 
 export(extract_multi_gap)
 export(extract_seq)
+export(runExample)
