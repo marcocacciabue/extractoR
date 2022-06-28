@@ -63,15 +63,13 @@ extract_multi_gap<-function(query,start=1,end=1){
 
     for (i in 2:length(start)) {
       subsequence_add<- extract_seq(query,start[i],end[i])
-      final_sequence<-Biostrings::xscat(subsequence,subsequence_add)
+      subsequence<-Biostrings::xscat(subsequence,subsequence_add)
 
     }
-  }else{
-    final_sequence<-subsequence
   }
-  names(final_sequence)<-names(query)
+  names(subsequence)<-names(query)
 
-  return(final_sequence)
+  return(subsequence)
 
 }
 
